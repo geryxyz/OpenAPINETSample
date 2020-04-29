@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAPISample", "OpenAPISample\OpenAPISample.csproj", "{BC468A4D-BDCC-4666-81A6-C25EB093F753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAPISampleClientLib", "OpenAPISampleClientLib\OpenAPISampleClientLib.csproj", "{ADF4FEE4-E884-407E-9EA1-B40FE2378A61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAPISampleClientLib", "OpenAPISampleClientLib\OpenAPISampleClientLib.csproj", "{ADF4FEE4-E884-407E-9EA1-B40FE2378A61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAPISampleConsoleClient", "OpenAPISampleConsoleClient\OpenAPISampleConsoleClient.csproj", "{AE4759F7-4771-4776-87C3-4B62ECBEB341}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ADF4FEE4-E884-407E-9EA1-B40FE2378A61} = {ADF4FEE4-E884-407E-9EA1-B40FE2378A61}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{ADF4FEE4-E884-407E-9EA1-B40FE2378A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADF4FEE4-E884-407E-9EA1-B40FE2378A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADF4FEE4-E884-407E-9EA1-B40FE2378A61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4759F7-4771-4776-87C3-4B62ECBEB341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4759F7-4771-4776-87C3-4B62ECBEB341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4759F7-4771-4776-87C3-4B62ECBEB341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4759F7-4771-4776-87C3-4B62ECBEB341}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
