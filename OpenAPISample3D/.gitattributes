@@ -1,3 +1,3 @@
-*.unity merge=unity diff
-*.prefab merge=unity diff
-*.asset merge=unity diff
+*.unity -text merge=unity diff
+*.prefab -text merge=unity diff
+*.asset -text merge=unity diff
