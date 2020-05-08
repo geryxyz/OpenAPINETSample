@@ -7,9 +7,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAPISample", "OpenAPISam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAPISampleClientLib", "OpenAPISampleClientLib\OpenAPISampleClientLib.csproj", "{ADF4FEE4-E884-407E-9EA1-B40FE2378A61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAPISampleConsoleClient", "OpenAPISampleConsoleClient\OpenAPISampleConsoleClient.csproj", "{AE4759F7-4771-4776-87C3-4B62ECBEB341}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAPISampleConsoleClient", "OpenAPISampleConsoleClient\OpenAPISampleConsoleClient.csproj", "{AE4759F7-4771-4776-87C3-4B62ECBEB341}"
 	ProjectSection(ProjectDependencies) = postProject
 		{ADF4FEE4-E884-407E-9EA1-B40FE2378A61} = {ADF4FEE4-E884-407E-9EA1-B40FE2378A61}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAPISampleClientLibPlatformIndependent", "OpenAPISampleClientLibPlatformIndependent\OpenAPISampleClientLibPlatformIndependent.csproj", "{A4E6F127-CF5A-4627-8B5F-CD492CBC7D4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B5AF1421-B39E-4520-B382-82E33A440994}"
+	ProjectSection(SolutionItems) = preProject
+		nswag.json = nswag.json
 	EndProjectSection
 EndProject
 Global
@@ -30,6 +37,10 @@ Global
 		{AE4759F7-4771-4776-87C3-4B62ECBEB341}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE4759F7-4771-4776-87C3-4B62ECBEB341}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE4759F7-4771-4776-87C3-4B62ECBEB341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E6F127-CF5A-4627-8B5F-CD492CBC7D4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E6F127-CF5A-4627-8B5F-CD492CBC7D4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E6F127-CF5A-4627-8B5F-CD492CBC7D4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E6F127-CF5A-4627-8B5F-CD492CBC7D4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

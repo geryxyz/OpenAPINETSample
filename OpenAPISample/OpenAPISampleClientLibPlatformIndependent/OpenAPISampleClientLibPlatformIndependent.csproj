@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateCode>True</GenerateCode>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
@@ -17,5 +17,13 @@
 
   <Target Name="NSwag" BeforeTargets="PrepareForBuild" Condition="'$(GenerateCode)'=='True' ">
     <Exec Command="$(NSwagExe_Core31) run $(SolutionDir)\nswag.json /variables:OutputDir=$(ProjectDir)" />
+  </Target>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <ItemGroup>
+      <_CopyItems Include="$(TargetDir)\*.*" />
+    </ItemGroup>
+    <MakeDir Directories="$(SolutionDir)\..\OpenAPISample3D\Assets\Plugins\weatherLib" />
+    <Copy SourceFiles="@(_CopyItems)" DestinationFolder="$(SolutionDir)\..\OpenAPISample3D\Assets\Plugins\weatherLib" />
   </Target>
 </Project>

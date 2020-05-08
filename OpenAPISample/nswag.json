@@ -32,7 +32,7 @@
       "typeAccessModifier": "public",
       "generateContractsOutput": true,
       "contractsNamespace": "OpenAPISampleClientLib",
-      "contractsOutputFilePath": "Contracts.cs",
+      "contractsOutputFilePath": "$(OutputDir)Contracts.cs",
       "parameterDateTimeFormat": "s",
       "parameterDateFormat": "yyyy-MM-dd",
       "generateUpdateJsonSerializerSettingsMethod": true,
@@ -89,7 +89,7 @@
       "enumNameGeneratorType": null,
       "serviceHost": null,
       "serviceSchemes": null,
-      "output": "Client.cs"
+      "output": "$(OutputDir)Client.cs"
     }
   }
 }
